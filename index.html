@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Spese</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+<div class = "app">
+
+    <div class=""title>
+        <h1>Il Mio Bilancio</h1>
+        <p>Gestisci le tue entrate e uscite</p>
+     </div>
+
+    <div class="card saldo">
+    <h2>Saldo</h2>
+    <p id="totale">0 €</p>
+  </div>
+<div class="card" id ="grafic-div">
+<canvas id="grafico"></canvas>
+</div>
+ 
+<div class="card" id="inputs">
+    <input id="desc" placeholder="Descrizione" type="text">
+    <input id="amount" placeholder="Importo" type="number">
+
+    <select id="type">
+        <option value = "entrata">Entrata</option>
+        <option value="uscita">Uscita</option>
+    </select>
+
+    <button id="add-btn">Add</button>
+</div>
+
+<div class="card" id ="table-div">
+<table>
+<thead>
+    <tr>
+        <th>Descrizione</th>
+        <th>Importo</th>
+    </tr>
+</thead>
+<tbody id="lista"></tbody>
+</table>
+</div>
+
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>

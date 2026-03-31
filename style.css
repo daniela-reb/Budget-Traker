@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    width: 40rem;
+    height: auto;
+    margin:auto;
+    padding:2rem;
+}
+.card{
+    background: #1e293b;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+input,select, #add-btn{
+width: 100%;
+border-radius: 10px;
+margin-top:0.3rem;
+padding: 0.3rem;
+font-size: 0.9rem;
+}
+input{
+    width: 98%;
+}
+#add-btn{
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+#add-btn:hover {
+    opacity: 0.8;
+}
+table{
+    width: 100%;
+}
+
+td{
+    padding: 1rem;
+}
+
+
+tr:hover {
+  background: #48576b;
+  cursor: pointer;
+ 
+}
+.saldo p {
+  font-size: 28px;
+  font-weight: bold;
+}
+.card:hover {
+transform: scale(1.02);
+}
+.entrata{
+    color: #22c55e;
+}
+
+.uscita{
+    color: #ef4444;
+}
+
+#grafico{
+    width: 100%;
+    background-color: rgb(28, 38, 73);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 25px rgba(0,0,0,0.5));
+}
+.btn-delete{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #334155;
+    color: #ef4444;
+}
+.desc{
+    font-weight: bold;
+}
+.date {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 2px;
+}
